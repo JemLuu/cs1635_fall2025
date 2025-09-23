@@ -224,7 +224,7 @@ class _HomePageState extends State<HomePage> {
                                     // YOU WILL NEED TO UPDATE THIS CODE TO BE ASYNC AWARE
                                     // SEE DOCUMENTATION ON 'THEN' FOR ORDERED TASKS
                                     // https://dart.dev/libraries/dart-async
-                                    String rawJson= await generateJson();
+                                    final rawJson = await generateJson();
                                     await parseJson(overrideRaw: rawJson);
                                 } catch (e) {
                                   print(
